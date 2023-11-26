@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+
+.container {
+    background: linear-gradient(45deg, #ff8c00, #ffef96);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    background: linear-gradient(45deg, #ff8c00, #ffef96);
+    width: 70%;
+    height: 80%;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+    background: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    border-radius: 15px 0 0 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+h2 {
+    color: #ff8c00;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #ff8c00, #ffef96);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.performance {
+    flex-grow: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #ccc;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ddd;
+    
+}
+
+/* Цвета для задач */
+.cell[data-tasks="1"] {
+    background-color: #8bc34a;
+    
+}
+
+.cell[data-tasks="2"] {
+    background-color: #4caf50;
+    
+}
+
+.cell[data-tasks="3"] {
+    background-color: #388e3c;
+    
+}
+
+
+.notification {
+    text-align: center;
+}
+
+
+
+.button:hover {
+    background-color: #005a8e;
+    
+}
+
+
+.button-yes {
+    background: linear-gradient(45deg, #4caf50, #8bc34a);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.button-no {
+    background: linear-gradient(45deg, #de1919, #780d0d);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.button-yes:hover {
+background: linear-gradient(45deg, #8bc34a, #4caf50);
+
+}
+.button-no:hover {
+    background: linear-gradient(45deg, #ee1e1a, #a10c0c);
+}

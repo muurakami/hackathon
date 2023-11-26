@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang=ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hahatestcss.css">
+    <title>Тест на выгорание</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="question">
+            <p>1. На сколько часто вы занимаетесь спортом?</p>
+            <div class="scale">
+                <input type="number" min="0" max="5">
+            </div>
+        </div>
+
+
+
+<div class="question">
+    <p>2. Оцените баланс между работай и отдыхом? (5 звезд все хорошо, 1 звезда очень плохой, сильно устаю)</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+
+
+    <div class="question">
+        <p>3. На сколько вы довольны своей профессией?</p>
+        <div class="scale">
+            <input type="number" min="0" max="5">
+        </div>
+    
+
+
+    
+        <div class="question">
+            <p>4. Готовы ли вы рекомендовать компанию?</p>
+            <div class="scale">
+                <input type="number" min="0" max="5">
+            </div>
+        
+
+
+       
+            <div class="question">
+                <p>5. На сколько ваш руководитель вас ценит?</p>
+                <div class="scale">
+                    <input type="number" min="0" max="5">
+                </div>
+            
+
+        
+        <div class="question">
+            <p>6. Хотите ли вы кого-нибудь уволить? (Ответ)</p>
+            <input type="text" id="answer6">
+        </div>
+
+
+        <div class="question">
+            <p>7. Какую из постоянных задач вы считаете не нужной? (Ответ)</p>
+            <input type="text" id="answer7">
+        </div>
+
+<div class="question">
+    <p>8. Вам редко снятся кошмары, связанные с работой?</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+<div class="question">
+    <p>9. Вам нравится работа с людьми?</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+
+<div class="question">
+    <p>10. На сколько вы бы хотели сменить работу?</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+
+<div class="question">
+    <p>11. Всегда ли у вас получается предотвратить влияние плохого настроения на деловые контакты?</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+
+<div class="question">
+    <p>12. Вы спокойно воспринимаете обоснованные претензии от партнеров?</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+
+<div class="question">
+    <p>13. Вам легко устанавливать и поддерживать контакты с деловыми партнерами?</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+
+<div class="question">
+    <p>14. Вы охотно рассказываете домашним о своей работе?</p>
+    <div class="scale">
+        <input type="number" min="0" max="5">
+    </div>
+</div>
+
+
+        <div class="question">
+            <p>15. При мысли о работе мне обычно становится не по себе: начинает колоть в области сердца, чувствую
+                тревогу, появляется головная боль.</p>
+            <div class="answer">
+                <button onclick="answerYes()">Да</button>
+                <button onclick="answerNo()">Нет</button>
+            </div>
+        </div>
+
+        <button onclick="submitTest()">Завершить тест</button>
+    </div>
+
+    <script>
+        function answerYes() {
+            // Обработка ответа "Да"
+        }
+
+        function answerNo() {
+            // Обработка ответа "Нет"
+        }
+
+        function submitTest() {
+            // Обработка результатов теста
+        }
+    </script>
+
+<div class="result-message" id="resultMessage">
+    <p>Возможно, вы сталкиваетесь с признаками выгорания. Рекомендуем обратить внимание на свое психическое и физическое
+        состояние.</p>
+</div>
+</div>
+
+<script>
+    function submitTest() {
+        // Здесь вы можете добавить логику обработки результатов теста
+        // и решить, когда отображать блок с сообщением.
+        var resultMessage = document.getElementById("resultMessage");
+        resultMessage.style.display = "block";
+    }
+</script>
+
+
+
+</body>
+
+</html>
